@@ -8,12 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var trafficLightColorRed: UIView!
+    @IBOutlet var trafficLightColorYellow: UIView!
+    @IBOutlet var trafficLightColorGreen: UIView!
+    @IBOutlet var buttonStart: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+   
     }
 
 
+    @IBAction func trafficLightSwitching() {
+    }
+    
 }
 
