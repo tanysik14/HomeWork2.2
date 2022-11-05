@@ -23,13 +23,13 @@ class ViewController: UIViewController {
         trafficLightColorYellow.alpha = 0.3
         trafficLightColorGreen.alpha = 0.3
     }
-
-
+    
+    
     @IBAction func trafficLightSwitching() {
-        trafficLightColorRed.alpha = 1
-        buttonStart.setTitle("Next" , for: .normal)
-      
-          if trafficLightColorRed.alpha == 1 {
+        if buttonStart.currentTitle == "Start" {
+            buttonStart.setTitle("Next", for: .normal)
+            trafficLightColorRed.alpha = 1
+        } else  if trafficLightColorRed.alpha == 1 {
             trafficLightColorYellow.alpha = 1
             trafficLightColorRed.alpha = 0.3
         } else if trafficLightColorYellow.alpha == 1 {
@@ -40,6 +40,7 @@ class ViewController: UIViewController {
             trafficLightColorGreen.alpha = 0.3
         }
     }
+    
     
 }
 
