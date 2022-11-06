@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,64 +14,55 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeWork2_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="341" translatesAutoresizingMaskIntoConstraints="NO" id="ynd-4C-G70">
-                                <rect key="frame" x="160" y="88" width="94" height="725.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="P6b-AC-5yb">
+                                <rect key="frame" x="158" y="88.999999999999972" width="114" height="406.33333333333326"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="P6b-AC-5yb">
-                                        <rect key="frame" x="0.0" y="0.0" width="94" height="342"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMj-gT-WL7">
-                                                <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
-                                                <color key="backgroundColor" red="0.92128556966781616" green="0.022553081714690705" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="tintColor" red="0.92128556969999997" green="0.044416189520000003" blue="0.057502138119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="rMj-gT-WL7" secondAttribute="height" multiplier="1:1" id="VKZ-ln-p0g"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udS-AN-P7b">
-                                                <rect key="frame" x="0.0" y="124" width="94" height="94"/>
-                                                <color key="backgroundColor" red="0.92128556969999997" green="0.89880399638192032" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="tintColor" red="0.92128556969999997" green="0.044416189520000003" blue="0.057502138119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="udS-AN-P7b" secondAttribute="height" multiplier="1:1" id="m1j-hG-Sgm"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xi7-BY-iLt">
-                                                <rect key="frame" x="0.0" y="248" width="94" height="94"/>
-                                                <color key="backgroundColor" red="0.0" green="0.44899726159793818" blue="0.020974516581474097" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="tintColor" red="0.92128556969999997" green="0.044416189520000003" blue="0.057502138119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="xi7-BY-iLt" secondAttribute="height" multiplier="1:1" id="d86-zF-fro"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwA-Fz-mj1">
-                                        <rect key="frame" x="0.0" y="683" width="94" height="42.5"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMj-gT-WL7">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="115.33333333333333"/>
+                                        <color key="backgroundColor" red="0.92128556966781616" green="0.022553081714690705" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.92128556969999997" green="0.044416189520000003" blue="0.057502138119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="iwA-Fz-mj1" secondAttribute="height" multiplier="111:50" id="ktw-co-uee"/>
+                                            <constraint firstAttribute="width" secondItem="rMj-gT-WL7" secondAttribute="height" multiplier="86:87" id="vMC-bT-Y0C"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="23"/>
-                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Start"/>
-                                        <connections>
-                                            <action selector="trafficLightSwitching" destination="BYZ-38-t0r" eventType="touchUpInside" id="d8w-0L-ase"/>
-                                        </connections>
-                                    </button>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udS-AN-P7b">
+                                        <rect key="frame" x="0.0" y="145.33333333333334" width="114" height="115.66666666666666"/>
+                                        <color key="backgroundColor" red="0.92128556969999997" green="0.89880399638192032" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.92128556969999997" green="0.044416189520000003" blue="0.057502138119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xi7-BY-iLt">
+                                        <rect key="frame" x="0.0" y="291" width="114" height="115.33333333333331"/>
+                                        <color key="backgroundColor" red="0.0" green="0.44899726159793818" blue="0.020974516581474097" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.92128556969999997" green="0.044416189520000003" blue="0.057502138119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwA-Fz-mj1">
+                                <rect key="frame" x="172" y="840" width="86" height="38"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iwA-Fz-mj1" secondAttribute="height" multiplier="43:19" id="Rc1-rv-4Cl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="23"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="trafficLightSwitching" destination="BYZ-38-t0r" eventType="touchUpInside" id="d8w-0L-ase"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ynd-4C-G70" secondAttribute="trailing" constant="160" id="VTP-kg-0yP"/>
-                            <constraint firstItem="ynd-4C-G70" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="kZ6-aw-r99"/>
-                            <constraint firstItem="ynd-4C-G70" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="stm-CT-jFI"/>
+                            <constraint firstItem="P6b-AC-5yb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.436141" id="Cac-cn-OpP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iwA-Fz-mj1" secondAttribute="bottom" constant="20" id="Z50-zf-r8w"/>
+                            <constraint firstItem="P6b-AC-5yb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZMy-s8-GSX"/>
+                            <constraint firstItem="P6b-AC-5yb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="mGy-1d-CKS"/>
+                            <constraint firstItem="iwA-Fz-mj1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mpU-c2-4cK"/>
                         </constraints>
                     </view>
                     <connections>

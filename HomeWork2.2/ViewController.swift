@@ -15,21 +15,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        trafficLightColorRed.layer.cornerRadius = 30
-        trafficLightColorYellow.layer.cornerRadius = 30
-        trafficLightColorGreen.layer.cornerRadius = 30
         buttonStart.layer.cornerRadius = 5
         trafficLightColorRed.alpha = 0.3
         trafficLightColorYellow.alpha = 0.3
         trafficLightColorGreen.alpha = 0.3
     }
     
+    override func viewWillLayoutSubviews() {
+        trafficLightColorRed.layer.cornerRadius = trafficLightColorRed.frame.width / 2
+        trafficLightColorYellow.layer.cornerRadius = trafficLightColorYellow.frame.width / 2
+        trafficLightColorGreen.layer.cornerRadius = trafficLightColorGreen.frame.width / 2
+    }
     
     @IBAction func trafficLightSwitching() {
-        if buttonStart.currentTitle == "Start" {
-            buttonStart.setTitle("Next", for: .normal)
-            trafficLightColorRed.alpha = 1
-        } else  if trafficLightColorRed.alpha == 1 {
+        buttonStart.setTitle("Next", for: .normal)
+        
+        if trafficLightColorRed.alpha == 1 {
             trafficLightColorYellow.alpha = 1
             trafficLightColorRed.alpha = 0.3
         } else if trafficLightColorYellow.alpha == 1 {
@@ -38,9 +39,10 @@ class ViewController: UIViewController {
         } else if trafficLightColorGreen.alpha == 1 {
             trafficLightColorRed.alpha = 1
             trafficLightColorGreen.alpha = 0.3
+        } else {
+            trafficLightColorRed.alpha = 1
         }
     }
-    
     
 }
 
